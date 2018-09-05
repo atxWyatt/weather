@@ -1,0 +1,44 @@
+// git rest-api weather by 
+// key: lol not gonna actually keep it here - REMOVED
+// USES: request
+
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atxWyatt/PA2/weather.git"
+  },
+  "default": "https://wyattturner.com"
+}
+
+const request = require('request');
+request(url, function (err, response, body) {
+  if(err){
+    console.log('error:', error);
+  } else {
+    console.log('body:', body);
+  }
+});
+
+
+let request = require('request');
+
+let apiKey = 'removedForSourceCode';
+let zip = 'zip-code';
+let url = `http://api.openweathermap.org/data/2.5/weather?q=${zip-code}&appid=${apiKey}`
+
+request(url, function (err, response, body) {
+  if(err){
+    console.log('error:', error);
+  } else {
+    console.log('body:', body);
+  }
+});
+
+// I now have JOB EXPERIENCE with rest-apis, so this is not only out-of-date, it is a much simpler program than what I am now experienced
+// with
